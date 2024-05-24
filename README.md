@@ -121,10 +121,11 @@ sudo systemctl restart apache2
 ```
 ![Screenshot 2024-05-24 183023](https://github.com/praneethsonu/AWS-Projects/assets/166925251/c7f7f80d-e163-4c14-98a4-c15f7b3d19bf)
 ![Screenshot 2024-05-24 183116](https://github.com/praneethsonu/AWS-Projects/assets/166925251/2af433de-2d71-4a1c-a208-1b35afd4ef03)
-http://3.215.11.193/ # hit on browser
-![Screenshot 2024-05-24 183146](https://github.com/praneethsonu/AWS-Projects/assets/166925251/5da0bc56-0357-4048-b3d4-9cfa372c3344)
+http://3.215.11.193 # hit on browser
 
-WordPress website is created & hosted
+![Screenshot 2024-05-24 183146](https://github.com/praneethsonu/AWS-Projects/assets/166925251/3adfa927-4acf-433d-b85c-3611852d1171)
+
+Yes WordPress website is created & hosted
 
 
 
