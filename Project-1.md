@@ -1,5 +1,7 @@
 # Create And Host A WordPress Website On AWS EC2
 
+![Create and Host a Wordpress Website on AWS EC2 with your own domain name](https://github.com/praneethsonu/AWS-Projects/assets/166925251/cacc261f-8b51-4b59-a20b-b9db9438557f)
+
 Step 1: 
 1. Launch an instance
 2. AMI — Ubuntu Server
