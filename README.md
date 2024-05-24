@@ -1,4 +1,4 @@
-# Create and Host a WordPress Website on AWS EC2
+# Create And Host A WordPress Website On AWS EC2
 
 Step 1: 
 1. Launch an instance
@@ -121,8 +121,9 @@ sudo systemctl restart apache2
 ![Screenshot 2024-05-24 183116](https://github.com/praneethsonu/AWS-Projects/assets/166925251/2af433de-2d71-4a1c-a208-1b35afd4ef03)
 http://3.215.11.193/ # hit on browser
 ![Screenshot 2024-05-24 183146](https://github.com/praneethsonu/AWS-Projects/assets/166925251/5da0bc56-0357-4048-b3d4-9cfa372c3344)
-WordPress Website Hosted
-![Screenshot 2024-05-24 183146](https://github.com/praneethsonu/AWS-Projects/assets/166925251/98a63982-8dbf-4e1c-b663-bf6ec6ce41c8)
+
+WordPress website is created & hosted
+
 
 
 
