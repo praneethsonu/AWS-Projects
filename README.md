@@ -19,7 +19,9 @@ Step 2: Elastic IP address
 
 In Action Select Associate Elastic IP address
 ![24](https://github.com/praneethsonu/AWS-Projects/assets/166925251/23e6a2db-a7a4-4e4b-a444-76dd80fb43f1)
+
 ![26](https://github.com/praneethsonu/AWS-Projects/assets/166925251/a362930b-0548-444c-9795-2a656128809e)
+
 ![27](https://github.com/praneethsonu/AWS-Projects/assets/166925251/0793e5e3-d257-42a8-bb25-28b3b08aa1a8)
 
 Step 3: Connect via SSH Client(MobaXterm)
@@ -30,6 +32,7 @@ Connect by SSH session
 
 I have connected to a virtual computer…
 ![Screenshot 2024-05-24 172954](https://github.com/praneethsonu/AWS-Projects/assets/166925251/ab35d3df-4714-470c-89eb-1d650bed744b)
+
 ![Screenshot 2024-05-24 173027](https://github.com/praneethsonu/AWS-Projects/assets/166925251/99e88e55-1cd9-4577-83fb-08dcb296abfd)
 
 Step 4: Installing and Configuring MySQL server:
@@ -93,7 +96,9 @@ Move WordPress folder to Apache document root
 sudo mv wordpress/ /var/www/html
 ```
 ![Screenshot 2024-05-24 180337](https://github.com/praneethsonu/AWS-Projects/assets/166925251/1d903d50-85b3-4e53-98a9-41a5484cf9ab)
+
 ![Screenshot 2024-05-24 180651](https://github.com/praneethsonu/AWS-Projects/assets/166925251/724d6b7f-e76d-40f1-98b6-5d48ad63faf6)
+
 ![Screenshot 2024-05-24 180839](https://github.com/praneethsonu/AWS-Projects/assets/166925251/df413759-387a-4310-8e6d-5fdc633b3480)
 
 It threw an error, doesn't matter copy the Configuration rules. create the wp-config.php file manually and paste the following text into it.
@@ -106,6 +111,7 @@ vi wp-config.php
 Try to open with your address followed by WordPress
 3.215.11.193/WordPress/
 ![Screenshot 2024-05-24 181905](https://github.com/praneethsonu/AWS-Projects/assets/166925251/ad94ec2f-bfd7-44ea-8fb9-6ad4f500d0a5)
+
 ![Screenshot 2024-05-24 181941](https://github.com/praneethsonu/AWS-Projects/assets/166925251/e51da7a5-fc12-42a4-9508-b1828a4f3055)
 
 I don't want my website to go to the subpath (3.215.11.193/WordPress) like this. I want it to serve on the root directory like this (3.215.11.193), as of now root directory serves the Apache root default page, but I want the WordPress website to the server at this root path. for that, I need to modify the Apache configuration, so I go back to my terminal rest follow the below commands.
