@@ -1,17 +1,20 @@
 # Host A Website On Amazon S3
 
 # Architecture Diagram
+
 ![S3 - Architecture](https://github.com/user-attachments/assets/1ade941e-a1f7-4c54-b5c1-0436bcd3ac07)
 
 # Introducing Today's Project!
 
 What is Amazon S3
+
 Amazon Simple Storage Service (S3) enables the storage of objects that can
 be accessible anywhere on the cloud. An object can be any type of file such
 as images, videos, documents, and more. The power of S3 lies in its high
 availability, scalability,
 
 How I used Amazon S3 in this project
+
 I used S3 for static website hosting. By uploading the HTML file and Folder
 where all files like images are present and uploaded in an S3 bucket and
 making them publicly accessible on the internet.
@@ -19,7 +22,9 @@ making them publicly accessible on the internet.
 # STEP #1
 
 # Create a bucket in Amazon S3
-- In the AWS Management Console, search for 
+
+- Go to AWS Management Console, search for S3.
+
 ![high-step1 1](https://github.com/user-attachments/assets/183d8a68-ff13-4a61-a03e-57de772a3eab)
 
 - Then choose Create Bucket
@@ -27,24 +32,29 @@ making them publicly accessible on the internet.
 - For Bucket name, enter nextwork-website-project-name. 
 - Make sure to replace your name with your name.
 - For Object Ownership, choose ACLs enabled.
+
 ![image](https://github.com/user-attachments/assets/e9c721de-58bc-4525-8c88-2ae2845ffe5c)
 
-What are ACLs (Access Control Lists)?
-An ACL = is a set of rules that decides who can get access to a resource.
+# What are ACLs (Access Control Lists)?
+
+-- An ACL = is a set of rules that decides who can get access to a resource.
 
 - Choose Bucket owner preferred.
 - For Block Public Access settings for this bucket,  clear the check box for Block all public access.
 - Check the box that says 
 “I acknowledge that the current settings might result in this bucket and the objects within becoming public.”
+
 ![image](https://github.com/user-attachments/assets/6c892f36-d22b-42d6-835a-df12cad36034)
 
 - For Bucket Versioning, choose Enable
 - Choose Create Bucket.
+
 ![image](https://github.com/user-attachments/assets/929174d5-f5ac-4479-9b62-0f67d575f5de)
 
 # STEP #2
 
 # Upload website content to your bucket
+
 -- Time to get your website's files in your bucket!
 
 - In the Buckets section, choose the name of your new bucket.
@@ -56,9 +66,11 @@ An ACL = is a set of rules that decides who can get access to a resource.
 - Choose Add folder
 - Choose Upload
 - S3 will get to work right away!
+
 ![image](https://github.com/user-attachments/assets/6c01da81-ce3b-4cd9-b918-a65a884d880c)
 
 - Your files should upload in a few minutes! Choose Close when you see the green Upload succeeded banner.
+
 ![image](https://github.com/user-attachments/assets/58277b4e-6521-4c52-96a2-472ed01bdc5f)
 
 # STEP #3
@@ -75,6 +87,7 @@ An ACL = is a set of rules that decides who can get access to a resource.
      . Static web hosting: Choose Enable.
      . Hosting type: Choose Host a static website.
      . Index document: Enter index.html.
+
 ![image](https://github.com/user-attachments/assets/94db7c78-c014-4e7e-8b35-620a0d35f123)
 
 - Choose Save changes.
@@ -86,14 +99,18 @@ An ACL = is a set of rules that decides who can get access to a resource.
 - Go to Objects tab.
 - Select the checkboxes next to your index.html file and the folder of website assets.
 - In the Actions dropdown, choose Make public using ACL.
+
 ![image](https://github.com/user-attachments/assets/fdfa6842-d259-43db-a04b-ad00560f8f49)
 
 - Choose Make public.
 - Once the green banner pops up, choose close
+
 ![image](https://github.com/user-attachments/assets/c243fd18-afd1-432b-a742-ee2304d9ca9e)
 
 - Now go to your browser in the search bar and paste the URL copied, Press enter.
-# Website
+
+# Website Hosted
+
 ![image](https://github.com/user-attachments/assets/d37e2f88-1b81-47c2-abee-6a50959dadc1)
 
 # Delete your resources
