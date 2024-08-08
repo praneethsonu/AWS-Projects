@@ -1,6 +1,6 @@
 # Host A Website On Amazon S3
 
-# Architecture Diagram
+# Project Architecture Diagram
 
 ![S3 - Architecture](https://github.com/user-attachments/assets/1ade941e-a1f7-4c54-b5c1-0436bcd3ac07)
 
@@ -37,7 +37,7 @@ making them publicly accessible on the internet.
 
 # What are ACLs (Access Control Lists)?
 
--- An ACL = is a set of rules that decides who can get access to a resource.
+An ACL = is a set of rules that decides who can get access to a resource.
 
 - Choose Bucket owner preferred.
 - For Block Public Access settings for this bucket,  clear the check box for Block all public access.
@@ -55,7 +55,7 @@ making them publicly accessible on the internet.
 
 # Upload website content to your bucket
 
--- Time to get your website's files in your bucket!
+Time to get your website's files in your bucket!
 
 - In the Buckets section, choose the name of your new bucket.
 - Upload these files into your bucket, like a HTML file and the Assets & images folder.
@@ -77,7 +77,7 @@ making them publicly accessible on the internet.
 
 # Configure a static website on Amazon S3
 
--- Now let's set up the bucket for static website hosting!
+Now let's set up the bucket for static website hosting!
 
 - Make sure you're back in your bucket's page. If you're not sure, choose buckets on the left hand side navigation bar, and then choose the bucket you created for this project.
 - Choose the Properties tab.
