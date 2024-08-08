@@ -1,8 +1,11 @@
-# Host A Website On Amazon S3
+# Host A Website On Amazon S3 
 
 # Project Architecture Diagram
 
 ![S3 - Architecture](https://github.com/user-attachments/assets/1ade941e-a1f7-4c54-b5c1-0436bcd3ac07)
+
+# Detailed documentation of the project here: 
+Link: https://www.linkedin.com/posts/b-praneeth-6b564530a_host-a-website-on-amazon-s3-activity-7227046077667934208-67yb?utm_source=share&utm_medium=member_desktop
 
 # Introducing Today's Project!
 
