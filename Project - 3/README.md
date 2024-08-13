@@ -14,11 +14,11 @@ Get ready to create (Tools):
 3. 👩‍👩‍👧‍👧 IAM Users and User Groups
 4. 🔖 AWS Account Alias
 
-Architecture Diagram
+# Architecture Diagram
 
 <img width="645" alt="architecture" src="https://github.com/user-attachments/assets/44f4aaac-47d4-4e48-8f2a-76e48411e97e">
 
-About Project
+# About Project
 Welcome to the NextWork team! You've just joined our dynamic team as a DevOps engineer, and we're thrilled to have you on board. 👋
 
 Boost our computing power to match increased traffic to the website. Lots of new students want to learn with NextWork over the break!
@@ -33,7 +33,6 @@ Onboard an intern that's working at NextWork - you're asked to make sure they ha
   
 2. Head to EC2
 ![Screenshot 2024-08-13 200439](https://github.com/user-attachments/assets/fe259a47-76e4-42d7-b8ce-9c2df2d65be2)
-
  
 3. Switch your Region to the one closest to you!
 ![Screenshot 2024-08-13 200503](https://github.com/user-attachments/assets/0e6246c3-3298-47dd-b17f-9524c2acf7f4)
@@ -53,7 +52,6 @@ Onboard an intern that's working at NextWork - you're asked to make sure they ha
 11. Head on down to see your EC2 settings and make sure the Amazon Machine Image (AMI) is using a Free tier eligible option.
 ![Screenshot 2024-08-13 200905](https://github.com/user-attachments/assets/289aef8f-af79-4372-aed7-4340d34c4ed2)
 
-
 12. For the instance type, also make sure you're using a Free tier eligible option!
 ![Screenshot 2024-08-13 201503](https://github.com/user-attachments/assets/f15a8dfa-c566-4294-ba28-42c930cbc409)
 
@@ -69,8 +67,8 @@ Onboard an intern that's working at NextWork - you're asked to make sure they ha
 
 14. Now let's create one more EC2 instance for the development environment.
 15. Repeat the same flow, but this time using these tags:
-Name: nextwork-development-yourname
-Env: development
+      Name: nextwork-development-yourname
+      Env: development
 16. Launch your second instance.
 17. Select from your left hand navigation panel.
 18. If you only see one instance on your page, make sure to use that refresh button!
