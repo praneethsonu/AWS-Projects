@@ -41,22 +41,22 @@ Onboard an intern that's working at NextWork - you're asked to make sure they ha
 7. Choose Add additional tags, which is right next to your Name field.
 ![Screenshot 2024-08-13 200627](https://github.com/user-attachments/assets/3e614b97-25b8-4638-a763-fe09fa769e69)
 
-9. Choose Add new tag.
-10. For the next tag, use this information:
+8. Choose Add new tag.
+9. For the next tag, use this information:
       Key: Env
       Value: production
 ![Screenshot 2024-08-13 200815](https://github.com/user-attachments/assets/e46a69dd-acd3-406c-b362-e4d309816920)
 
-11. Head on down to see your EC2 settings and make sure the Amazon Machine Image (AMI) is using a Free tier eligible option.
+10. Head on down to see your EC2 settings and make sure the Amazon Machine Image (AMI) is using a Free tier eligible option.
 ![Screenshot 2024-08-13 200905](https://github.com/user-attachments/assets/289aef8f-af79-4372-aed7-4340d34c4ed2)
 
-12. For the instance type, also make sure you're using a Free tier eligible option!
+11. For the instance type, also make sure you're using a Free tier eligible option!
 ![Screenshot 2024-08-13 201503](https://github.com/user-attachments/assets/f15a8dfa-c566-4294-ba28-42c930cbc409)
 
-13. For Key pair (login), select Proceed without a key pair.
+12. For Key pair (login), select Proceed without a key pair.
 ![Screenshot 2024-08-13 201527](https://github.com/user-attachments/assets/250fcc4f-aee9-48e3-835a-fb1992de35ab)
 
-14. You're ready! Click Launch instance.
+13. You're ready! Click Launch instance.
 ![Screenshot 2024-08-13 201557](https://github.com/user-attachments/assets/d830da37-fd0c-4325-94fe-a3d2c0c2af48)
 
 ![Screenshot 2024-08-13 201607](https://github.com/user-attachments/assets/6594ec07-dc1d-4804-8c16-3fc16ccecd93)
@@ -74,11 +74,9 @@ Onboard an intern that's working at NextWork - you're asked to make sure they ha
 20. Select the checkbox next to one of your instances, and a popup window of information pops up!
 21. Select the Tags tab.
 ![Screenshot 2024-08-13 202931](https://github.com/user-attachments/assets/0e5ff4f2-a781-44d0-aba9-69666537aaaa)
-you'll see the tags you've defined right here.
+22. you'll see the tags you've defined right here.
 
 ![Screenshot 2024-08-13 203038](https://github.com/user-attachments/assets/342422bc-5295-46b4-8071-5462a3defe75)
 
-22. You've just deployed two EC2 instances (servers) with different tag values.
-
-
+23. You've just deployed two EC2 instances (servers) with different tag values.
 
