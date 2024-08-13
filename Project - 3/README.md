@@ -35,8 +35,6 @@ Onboard an intern that's working at NextWork - you're asked to make sure they ha
 ![Screenshot 2024-08-13 200439](https://github.com/user-attachments/assets/fe259a47-76e4-42d7-b8ce-9c2df2d65be2)
  
 3. Switch your Region to the one closest to you!
-![Screenshot 2024-08-13 200503](https://github.com/user-attachments/assets/0e6246c3-3298-47dd-b17f-9524c2acf7f4)
-
 4. In your EC2 console, choose Launch Instances
 5. Let's set up your EC2 instance!
 6. In Name, enter the value nextwork-production-yourname. Yup, replace yourname with your name.
