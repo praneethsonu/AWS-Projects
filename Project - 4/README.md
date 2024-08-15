@@ -9,7 +9,7 @@ Start creating a CI/CD pipeline with this DevOps project.
 # Introduction To The Project
 
 Create a CI/CD pipeline to build and deploy a simple web application using AWS' Code services.
-Here's what you'll build at the end of ALL seven projects:
+Here's what you'll build at the end of project. You will learn the basics of building a web app and IDE using Cloud9. This will lay the foundations for your DevOps work across this project.
 
 # AWS Services Used:
 
