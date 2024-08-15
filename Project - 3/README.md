@@ -1,4 +1,4 @@
-# Cloud Security with AWS IAM
+![Screenshot 2024-08-13 205852](https://github.com/user-attachments/assets/615ee086-4995-4a62-8718-9424fd13d7f2)# Cloud Security with AWS IAM
 Let's use IAM to control access to our AWS resources.
 
 # Introduction to the project.
@@ -72,11 +72,141 @@ Onboard an intern that's working at NextWork - you're asked to make sure they ha
 18. If you only see one instance on your page, make sure to use that refresh button!
 19. Let's have a look at your wonderful work.
 20. Select the checkbox next to one of your instances, and a popup window of information pops up!
-21. Select the Tags tab.
 ![Screenshot 2024-08-13 203038](https://github.com/user-attachments/assets/342422bc-5295-46b4-8071-5462a3defe75)
-
+21. Select the Tags tab.
 23. you'll see the tags you've defined right here.
 ![Screenshot 2024-08-13 202931](https://github.com/user-attachments/assets/0e5ff4f2-a781-44d0-aba9-69666537aaaa)
-
 24. You've just deployed two EC2 instances (servers) with different tag values.
 
+# STEP #2
+
+# Create an IAM Policy
+
+25. Head to your IAM Console.
+![Screenshot 2024-08-13 203059](https://github.com/user-attachments/assets/13544761-3065-4056-b27b-396ec95674b6)
+
+26. Now on the left-hand navigation panel of your IAM console, choose Policies.
+![Screenshot 2024-08-13 203219](https://github.com/user-attachments/assets/ffc8b36f-9974-4454-84c6-5169312b0c85)
+
+27. Choose Create Policy.
+28. Switch your Policy editor tab to JSON.
+![Screenshot 2024-08-13 203332](https://github.com/user-attachments/assets/14cc419f-cb8e-4006-a9ba-7dd0f39151fb)
+
+29. Here's the policy you'll be using! Paste this policy into your editor - replace ALL of the existing code in your editor.
+
+# CODE
+
+{    
+  "Version": "2012-10-17",    
+  "Statement": [        
+    {            
+      "Effect": "Allow",            
+      "Action": "ec2:*",            
+      "Resource": "*",            
+      "Condition": {                
+        "StringEquals": {                    
+          "ec2:ResourceTag/Env": "development"                
+        }            
+      }        
+    },        
+    {            
+      "Effect": "Allow",            
+      "Action": "ec2:Describe*",            
+      "Resource": "*"        
+    },        
+    {            
+      "Effect": "Deny",            
+      "Action": [                
+        "ec2:DeleteTags",                
+        "ec2:CreateTags"            
+      ],            
+      "Resource": "*"        
+    }    
+  ] 
+}
+
+30. Select Next when you're ready.
+31. Fill in your policy's details:
+    Name: NextWorkDevEnvironmentPolicy 
+    Description: IAM Policy for NextWork's development environment.
+32. Choose Create policy. 
+33. Oh no! Turns out there's a rule for the characters allowed in your Policy description. Edit this description to get rid of that error (can you tell which character is not valid? There's a hint given to you right underneath the Description's text box)!
+34. Choose Create policy again when you're done.
+![Screenshot 2024-08-13 204620](https://github.com/user-attachments/assets/bfc306eb-f468-449e-b4b5-eae98fe16715)
+
+# STEP #3
+
+# Create an AWS Account Alias
+
+35. Head to your IAM dashboard.
+36. In the right-hand side of the dashboard, choose Create under Account Alias.
+![Screenshot 2024-08-13 205036](https://github.com/user-attachments/assets/a4eb9535-029d-4072-bb6a-4775202bc4cc)
+
+37. In the Preferred alias field, enter nextwork-alias-yourname. Yup, replace yourname with your name!
+![Screenshot 2024-08-13 205137](https://github.com/user-attachments/assets/00322e1e-7214-438e-815d-6141c1eaf891)
+
+38. Choose Create alias.
+
+# STEP #4
+
+# Create IAM Users and User Groups
+
+39. Choose User groups in your left-hand navigation panel.
+40. Choose Create group.
+41. Let's create your first user group!
+42. To set up your user group:
+    Name: nextwork-dev-group
+    Attach permission policies: NextWorkDevEnvironmentPolicy
+![Screenshot 2024-08-13 205827](https://github.com/user-attachments/assets/1f03618f-5a20-4b79-98ae-ab53f5e24f7e)
+
+43. Select Create user group. Success!
+![Screenshot 2024-08-13 205852](https://github.com/user-attachments/assets/aee97b16-db03-4b60-85f9-c85af11a6ca7)
+44. Now let's add Users to your user group.
+45. Choose Users from the left-hand navigation panel.
+46. Choose Create user.
+47. Let's set up this user! Under User name, enter nextwork-dev-yourname.
+48. Tick the checkbox for Provide user access to the AWS Management Console.
+49. Uncheck the box for Users must create a new password at next sign-in - Recommended.
+![Screenshot 2024-08-13 210032](https://github.com/user-attachments/assets/687513c1-3339-4237-9ecb-9c29ca5c64e2)
+![Screenshot 2024-08-13 210516](https://github.com/user-attachments/assets/3a00d174-0db8-49e3-b58d-ab14825f5e31)
+50. Select Next when you're ready!
+51. To set permissions for your user, we'll simply add it to the user group you've created. Select the checkbox next to nextwork-dev-group.
+52. Select Next.
+53. Select Create user!
+![Screenshot 2024-08-13 210643](https://github.com/user-attachments/assets/763cc63c-404b-4ec5-ba6a-747ac0c2a7ef)
+
+54. it's a success - now you're seeing some specific sign-in details for your new user. Stay on this page.
+![Screenshot 2024-08-13 210734](https://github.com/user-attachments/assets/1956527b-926b-470e-bb0f-9bd61452e29f)
+
+# STEP #5
+
+# Test your user's access
+
+55. Copy the Console sign-in URL. Do not close this tab!
+56. Open a new incognito window on your browser.
+57. Open the new console sign-in URL in your incognito window.
+58. Using the User name and Console password given in your IAM tab, let's log in!
+![Screenshot 2024-08-13 211754](https://github.com/user-attachments/assets/a3046295-f28c-468c-9c1a-c50cbbfefb49)
+
+59. Welcome back to your AWS console, but this time as the dev user that you've created for yourself.
+60. As a new user, you'll notice that some of your dashboard panels are showing Access denied already!
+![Screenshot 2024-08-13 211850](https://github.com/user-attachments/assets/aee833bd-fe3b-4d60-bbca-e938882d8fde)
+
+60. Head to your EC2 console, and make sure you're in the same Region as the one where you deployed your two production and development instances.
+61. Head to Instances.
+62. Select your production instance, and in the Actions dropdown, select Manage instance state.
+![Screenshot 2024-08-13 212052](https://github.com/user-attachments/assets/ed699829-8921-4d71-89b7-94ac29b64201)
+
+63. Let's try to stop this instance. Select the Stop option, then Change state.
+![Screenshot 2024-08-13 212127](https://github.com/user-attachments/assets/2c9815b6-b222-4a25-adc4-7975b029020a)
+64. Select Stop.
+![Screenshot 2024-08-13 212158](https://github.com/user-attachments/assets/fdb4ea5b-e3d0-42f1-a45e-e78c7fc23c1d)
+65. Now let's try to stop the development instance.
+66. Head back to the Instances page, and select the checkbox next to nextwork-development-yourname.
+67. Under the Actions drop-down, select Manage instance state.
+68. Select Stop, then Change state. Select Stop.
+![Screenshot 2024-08-13 212406](https://github.com/user-attachments/assets/06578427-cf8b-4992-a95b-4d97653c4219)
+
+69. Success!
+
+# Delete Your All Resources. 
