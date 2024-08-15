@@ -73,10 +73,10 @@ Onboard an intern that's working at NextWork - you're asked to make sure they ha
 19. Let's have a look at your wonderful work.
 20. Select the checkbox next to one of your instances, and a popup window of information pops up!
 21. Select the Tags tab.
-![Screenshot 2024-08-13 202931](https://github.com/user-attachments/assets/0e5ff4f2-a781-44d0-aba9-69666537aaaa)
-22. you'll see the tags you've defined right here.
-
 ![Screenshot 2024-08-13 203038](https://github.com/user-attachments/assets/342422bc-5295-46b4-8071-5462a3defe75)
 
-23. You've just deployed two EC2 instances (servers) with different tag values.
+23. you'll see the tags you've defined right here.
+![Screenshot 2024-08-13 202931](https://github.com/user-attachments/assets/0e5ff4f2-a781-44d0-aba9-69666537aaaa)
+
+24. You've just deployed two EC2 instances (servers) with different tag values.
 
