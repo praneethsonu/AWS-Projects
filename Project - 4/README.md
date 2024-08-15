@@ -13,6 +13,6 @@ Here's what you'll build at the end of project. You will learn the basics of bui
 
 # AWS Services Used:
 
-AWS Cloud9
-AWS IAM
-Amazon EC2
+1. AWS Cloud9
+2. 👩‍👩‍👧‍👧 AWS IAM 
+3. 💻 Amazon EC2
