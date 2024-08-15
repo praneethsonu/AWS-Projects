@@ -1,4 +1,4 @@
-![Screenshot 2024-08-13 205852](https://github.com/user-attachments/assets/615ee086-4995-4a62-8718-9424fd13d7f2)# Cloud Security with AWS IAM
+# Cloud Security with AWS IAM
 Let's use IAM to control access to our AWS resources.
 
 # Introduction to the project.
