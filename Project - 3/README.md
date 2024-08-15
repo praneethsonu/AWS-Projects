@@ -95,8 +95,7 @@ Onboard an intern that's working at NextWork - you're asked to make sure they ha
 
 29. Here's the policy you'll be using! Paste this policy into your editor - replace ALL of the existing code in your editor.
 
-# CODE
-
+# Policy Code
 
 {    
   "Version": "2012-10-17",    
@@ -126,7 +125,6 @@ Onboard an intern that's working at NextWork - you're asked to make sure they ha
     }    
   ] 
 }
-
 
 
 30. Select Next when you're ready.
