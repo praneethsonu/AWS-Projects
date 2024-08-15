@@ -1,4 +1,5 @@
-# Cloud Security with AWS IAM
+# Cloud Security With AWS IAM
+
 Let's use IAM to control access to our AWS resources.
 
 # Introduction to the project.
@@ -96,6 +97,7 @@ Onboard an intern that's working at NextWork - you're asked to make sure they ha
 
 # CODE
 
+
 {    
   "Version": "2012-10-17",    
   "Statement": [        
@@ -124,6 +126,8 @@ Onboard an intern that's working at NextWork - you're asked to make sure they ha
     }    
   ] 
 }
+
+
 
 30. Select Next when you're ready.
 31. Fill in your policy's details:
