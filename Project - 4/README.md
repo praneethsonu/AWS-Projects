@@ -100,9 +100,50 @@ Let's get ready to:
 
 27. Subnet done!
 
-28. Time for the last step to connect our VPC to the internet... an Internet Gateway.
+28. Time for the last step to connect our VPC to the Internet... an Internet Gateway.
 29. Here's what the architecture diagram looks like:
 
 ![image](https://github.com/user-attachments/assets/17e8b5c2-57f9-487c-8aa4-4e3273098d4a)
 
 30. In the left navigation pane, choose Internet gateways.
+31. Aha! An existing internet gateway.
+![Screenshot 2024-08-18 225728](https://github.com/user-attachments/assets/d7354feb-f21e-4700-ba04-103fc0fd8055)
+32. Choose Create Internet gateway.
+33. Configure your internet gateway settings:
+     Name tag: NextWork IG.
+     Choose Create Internet Gateway.
+    
+![Screenshot 2024-08-18 225753](https://github.com/user-attachments/assets/ee2248d0-6e69-4106-b6b2-e5a7e4424fec)
+
+35. Select your newly created internet gateway and choose Actions, then Attach to VPC.
+
+![Screenshot 2024-08-18 225841](https://github.com/user-attachments/assets/342f2576-d52d-4554-a129-b30319a67cc4)
+
+36. Select NextWork VPC.
+37. Select Attach internet gateway.
+
+38. Even though you've created an Internet Gateway and attached it to your VPC, there's still a step left to go... you still have to tell instances in your public subnet how to get to the internet. This involves setting up route tables to direct traffic from your instances to your internet gateway!
+
+39. We'll jump into that in the next project... but in the meantime, that's a WRAP for the very first AWS networking project! Well done 👏
+
+40. Completed today's project and set up your very own virtual private cloud with Amazon VPC.
+
+# STEP #4
+
+# Delete Your Resources
+
+41. Before you read the steps on deleting your resources, do you think you can challenge yourself to try delete everything in this project without any guidance?
+
+42. Keeping track of your resources, and deleting them at the end, is absolutely a skill that will help you reduce waste in your account.
+
+VPC:
+
+. In your VPC console, select the checkbox next to NextWork VPC.
+. Select the Actions dropdown.
+. Select Delete VPC.
+   . Note down the VPC ID of the VPC you are deleting - you might need this when deleting the other resources!
+
+43. Your subnet and internet gateway should be deleted automatically with your VPC, but it's a good idea to check this anyway.
+![image](https://github.com/user-attachments/assets/a610938f-9f18-4e21-9c85-e35960b8c72d)
+
+44. Your subnet and internet gateway should be deleted automatically with your VPC, but it's a good idea to check this anyway.
