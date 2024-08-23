@@ -87,6 +87,9 @@ Let's get ready to:
 ![Screenshot 2024-08-18 224845](https://github.com/user-attachments/assets/aaa192b1-16e8-4fcd-998a-651d69583442)
 
 24. Check the box next to Enable auto-assign public IPv4 address.
+
+![Screenshot 2024-08-18 225003](https://github.com/user-attachments/assets/90cbb414-89e2-4ac9-aca8-7a7e95841d85)
+
 25. Choose Save.
 
 # STEP #3
