@@ -1,6 +1,6 @@
 # VPC Traffic Flow And Security
 
-# AWS Networking Project - 2
+# AWS Networking Part - 2
 
 # Architecture Diagram
 
