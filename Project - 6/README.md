@@ -1,4 +1,5 @@
 # Visualize A Relational Database
+Create a relational database and then visualize my data from by database in the AWS Quicksight.
 
 # AWS DataBase Part - 1
 
@@ -13,8 +14,6 @@
 3. 👤 Amazon IAM (Identity Access Management).
 4. ☁️ Amazon VPC (Virtual Private Cloud).
 5. 📏 Security Groups.
-
-Create a relational database and then visualize my data from by database in the AWS Quicksight.
 
 # STEP #1
 
