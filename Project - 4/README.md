@@ -1,6 +1,6 @@
 # Build A Virtual Private Cloud (VPC)
 
-#  AWS Networking Project - 1
+#  AWS Networking Part - 1
 
 The core of AWS networking by creating your very own Virtual Private Cloud (VPC).
 
