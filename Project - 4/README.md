@@ -1,4 +1,4 @@
-# Build a Virtual Private Cloud
+# Build A Virtual Private Cloud (VPC)
 
 AWS Network Project - 1
 
