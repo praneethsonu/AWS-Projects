@@ -1,4 +1,4 @@
-# VPC Traffic Flow and Security
+# VPC Traffic Flow And Security
 AWS Network Project - 2
 
 # Architecture Diagram
