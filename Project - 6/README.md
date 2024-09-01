@@ -6,13 +6,13 @@
 
 ![architecture-diagram](https://github.com/user-attachments/assets/9893af75-beae-471c-aa87-d068d6bcd4a3)
 
-# AWS SERVICES USED:
+# AWS Services Used:
 
-# Amazon RDS (Relational Database Service)
-# Amazon QuickSight
-# Amazon IAM
-# Security Groups
-# Amazon VPC
+1. 🛢️ Amazon RDS (Relational Database Service).
+2. 🆕 Amazon QuickSight.
+3. 👤 Amazon IAM (Identity Access Management).
+4. ☁️ Amazon VPC (Virtual Private Cloud).
+5. 📏 Security Groups.
 
 Create a relational database and then visualize my data from by database in the AWS Quicksight.
 
