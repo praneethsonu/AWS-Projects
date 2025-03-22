@@ -117,4 +117,3 @@ After enabling CloudTrail SNS notifications, my inbox received frequent alerts a
 ---
 
 ---
-
